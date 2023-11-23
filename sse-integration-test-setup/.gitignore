@@ -1,0 +1,7 @@
+.#webclasspath_ac
+.#webclasspath_ac.bak
+/bin
+/build
+/classes
+/dist
+/target

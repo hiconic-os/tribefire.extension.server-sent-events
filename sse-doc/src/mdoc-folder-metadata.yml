@@ -1,0 +1,10 @@
+---
+!com.braintribe.doc.meta.CustomFolderMetaData
+files:
+  setup.md: !com.braintribe.doc.meta.FileDisplayInfo
+    displayTitle: "Setup"
+    priority: -200
+
+  usage.md: !com.braintribe.doc.meta.FileDisplayInfo
+    displayTitle: "Usage"
+    priority: -190

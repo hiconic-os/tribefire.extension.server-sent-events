@@ -1,0 +1,3 @@
+TribefireModule = com.braintribe.model.asset.natures.TribefireModule
+
+$nature = TribefireModule()
