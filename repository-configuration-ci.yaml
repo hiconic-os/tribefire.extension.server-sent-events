@@ -1,0 +1,27 @@
+!com.braintribe.devrock.model.repository.RepositoryConfiguration {
+  cachePath: "${config.dir}/../repo",
+
+  installRepository: &install-repo !com.braintribe.devrock.model.repository.MavenFileSystemRepository {
+    name: "install",
+    rootPath: "${config.dir}/../inst",
+    dominanceFilter: !com.braintribe.devrock.model.repository.filters.AllMatchingArtifactFilter {},
+    cachable: false,
+  },
+
+  uploadRepository: &hiconic-dev  !com.braintribe.devrock.model.repository.IndexedMavenHttpRepository {
+    name: "hiconic-dev", 
+    url: "https://maven.pkg.github.com/hiconic-os/maven-repo-dev", 
+    user: "${env.DEVROCK_PIPELINE_UPLOAD_USER}",
+    password: "${env.DEVROCK_PIPELINE_UPLOAD_PASSWORD}",
+    dominanceFilter: !com.braintribe.devrock.model.repository.filters.AllMatchingArtifactFilter {},
+  },
+
+  repositories: [
+    *install-repo,
+    *hiconic-dev,
+    !com.braintribe.devrock.model.repository.MavenHttpRepository {
+      name: "third-party", 
+      url: "https://repo1.maven.org/maven2/", 
+    },
+  ]
+}

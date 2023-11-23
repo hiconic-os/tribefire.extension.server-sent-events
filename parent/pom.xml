@@ -24,7 +24,7 @@ You should have received a copy of the GNU Lesser General Public License along w
         <V.tribefire.cortex>[3.0,3.1)</V.tribefire.cortex>
         <V.tribefire.setup.classic.env>[3.0,3.1)</V.tribefire.setup.classic.env>
         <V.tribefire.extension.vitals.jdbc>[3.0,3.1)</V.tribefire.extension.vitals.jdbc>
-        <V.javax.servlet>3.0.1</V.javax.servlet>
+        <V.javax.servlet>3.1.0</V.javax.servlet>
         <V.org.apache.httpcomponents_httpasyncclient>4.1.5</V.org.apache.httpcomponents_httpasyncclient>
         <V.tribefire.extension.web-api>[1.0,1.1)</V.tribefire.extension.web-api>
     </properties>

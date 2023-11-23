@@ -1,0 +1,9 @@
+name: Pull Requests
+
+on:
+  pull_request:
+
+jobs:
+  run:
+    uses: hiconic-os/hiconic.ci.workflows/.github/workflows/pr.yaml@main
+    secrets: inherit
