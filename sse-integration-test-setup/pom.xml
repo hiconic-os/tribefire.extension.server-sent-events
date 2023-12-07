@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License along w
         <version>[3.0,3.1)</version>
     </parent>
     <artifactId>sse-integration-test-setup</artifactId>
-    <version>3.0.5</version>
+    <version>3.0.6</version>
     <packaging>pom</packaging>
     <properties>
         <archetype>asset</archetype>

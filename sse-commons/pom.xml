@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License along w
         <version>[3.0,3.1)</version>
     </parent>
     <artifactId>sse-commons</artifactId>
-    <version>3.0.7</version>
+    <version>3.0.8</version>
     <properties>
     </properties>
     <licenses>

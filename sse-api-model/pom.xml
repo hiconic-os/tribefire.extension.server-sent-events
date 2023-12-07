@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License along w
         <version>[3.0,3.1)</version>
     </parent>
     <artifactId>sse-api-model</artifactId>
-    <version>3.0.6</version>
+    <version>3.0.7</version>
     <properties>
     </properties>
     <licenses>
