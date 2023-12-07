@@ -23,7 +23,7 @@ steps {
 
     step AnalyzeCodebase.T
 
-    step BuildArtifacts.T, { equip { handler = { ant it.folderName, 'install', 'candidateInstall' } } }
+    step BuildArtifacts.T, { equip { handler = { ant it.folderName, 'install' } } }
 
     step CheckLinking.T, { equip { handler = { ant it.folderName, 'check-linking' } } }
     

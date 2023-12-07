@@ -1,0 +1,15 @@
+name: Build Custom Range
+
+on:
+  workflow_dispatch:
+    inputs:
+      range:
+        type: string
+        default: "."
+
+jobs:
+  run:
+    uses: hiconic-os/hiconic.ci.workflows/.github/workflows/range.yaml@main
+    secrets: inherit
+    with:
+      range: "${{ inputs.range }}"

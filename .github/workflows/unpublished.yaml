@@ -1,0 +1,9 @@
+name: Build Unpublished
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run:
+    uses: hiconic-os/hiconic.ci.workflows/.github/workflows/unpublished.yaml@main
+    secrets: inherit
