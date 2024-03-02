@@ -211,7 +211,7 @@ public class SseServer extends HttpServlet {
 				}
 
 				if (enforceSingleConnectionPerSessionId && !isSessionOwner(sessionId, connectionId)) {
-					logger.info(() -> "Another thread is serving session Id " + sessionId + " (" + username + ")");
+					logger.debug(() -> "Another thread is serving session Id " + sessionId + " (" + username + ")");
 					// Another thread has taken over this sessionId
 					break;
 				}
