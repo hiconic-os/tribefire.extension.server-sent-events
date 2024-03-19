@@ -6,6 +6,9 @@ on:
       range:
         type: string
         default: "."
+      publish:
+        type: boolean
+        default: true
 
 jobs:
   run:
@@ -13,3 +16,4 @@ jobs:
     secrets: inherit
     with:
       range: "${{ inputs.range }}"
+      publish: ${{ inputs.publish }}
