@@ -11,46 +11,6 @@
 // ============================================================================
 package tribefire.extension.sse.processing.util;
 
-public class ConnectedClient {
-
-	private String connectionId;
-	private String clientId;
-	private String lastSeenId;
-	private String clientIp;
-	private String username;
-	private String sessionId;
-
-	public ConnectedClient(String connectionId, String clientId, String lastSeenId, String clientIp, String username, String sessionId) {
-		this.connectionId = connectionId;
-		this.clientId = clientId;
-		this.lastSeenId = lastSeenId;
-		this.clientIp = clientIp;
-		this.username = username;
-		this.sessionId = sessionId;
-	}
-
-	public String getConnectionId() {
-		return connectionId;
-	}
-
-	public String getClientId() {
-		return clientId;
-	}
-
-	public String getLastSeenId() {
-		return lastSeenId;
-	}
-
-	public String getClientIp() {
-		return clientIp;
-	}
-
-	public String getUsername() {
-		return username;
-	}
-
-	public String getSessionId() {
-		return sessionId;
-	}
+public record ConnectedClient(String connectionId, String clientId, String lastSeenId, String clientIp, String username, String sessionId) {
 
 }

@@ -19,6 +19,7 @@ You should have received a copy of the GNU Lesser General Public License along w
         <V.tribefire.extension.server-sent-events>[3.0,3.1)</V.tribefire.extension.server-sent-events>
         <V.com.braintribe.gm>[2.0,2.1)</V.com.braintribe.gm>
         <V.com.braintribe.servlet>[2.0,2.1)</V.com.braintribe.servlet>
+        <V.com.braintribe.testing>[2.0, 2.1)</V.com.braintribe.testing>
         <V.com.braintribe.wire>[2.0,2.1)</V.com.braintribe.wire>
         <V.tribefire.cortex>[3.0,3.1)</V.tribefire.cortex>
         <V.tribefire.setup.classic.env>[3.0,3.1)</V.tribefire.setup.classic.env>

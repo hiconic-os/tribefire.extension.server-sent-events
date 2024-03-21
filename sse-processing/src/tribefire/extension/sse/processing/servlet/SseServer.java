@@ -113,8 +113,7 @@ public class SseServer extends HttpServlet {
 			}
 		}
 
-		CountingPrintWriter writer = new CountingPrintWriter(resp.getWriter());
-		try {
+		try (CountingPrintWriter writer = new CountingPrintWriter(resp.getWriter())) {
 			statistics.registerPollConnection(connectionId, clientId, lastEventId, clientIp, username, sessionId);
 
 			while (true) {

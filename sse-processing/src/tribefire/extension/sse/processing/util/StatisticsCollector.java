@@ -112,9 +112,9 @@ public class StatisticsCollector {
 
 		result.setNumberOfEventsSent(totalEventsSent);
 
-		result.setClientConnectionsPerSessionId(clientsPerIdentifier(ConnectedClient::getSessionId));
-		result.setClientConnectionsPerUsername(clientsPerIdentifier(ConnectedClient::getUsername));
-		result.setClientConnectionsPerIpAddress(clientsPerIdentifier(ConnectedClient::getClientIp));
+		result.setClientConnectionsPerSessionId(clientsPerIdentifier(ConnectedClient::sessionId));
+		result.setClientConnectionsPerUsername(clientsPerIdentifier(ConnectedClient::username));
+		result.setClientConnectionsPerIpAddress(clientsPerIdentifier(ConnectedClient::clientIp));
 
 		return result;
 	}
